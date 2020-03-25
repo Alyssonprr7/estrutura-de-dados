@@ -42,7 +42,6 @@ public class Desafio {
             }else{
                 System.out.println("Insira um valor válido");
             }
-        retorno =true;
         }
         return retorno;
     }
