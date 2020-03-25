@@ -7,17 +7,23 @@ public class Stack {
     List<String> dados = new LinkedList<>();
 
     public void push(String dado) {
-        //TODO implementar funcao para add item na pilha
-
+        dados.add(dado);
     }
 
     public String pop() {
-        //TODO Implementar funcao para remover item da pilha
-        return null;
+        return dados.remove(dados.size()-1);
     }
 
     public int size() {
-        //TODO Implementar funcao para verificar quantidade de itens na pilha
-        return 0;
+        return dados.size();
+    }
+
+    public boolean isEmpty(){
+        return (dados.size()==0);
+    }
+
+    @Override
+    public String toString() {
+        return dados.toString();
     }
 }
